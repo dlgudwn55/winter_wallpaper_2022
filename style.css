@@ -1,0 +1,15 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(to top, skyblue, pink);
+    position:absolute; top:0; bottom:0; right:0; left:0;
+}
+
+.snow {
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
