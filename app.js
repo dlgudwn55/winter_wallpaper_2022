@@ -2,7 +2,7 @@ let snowList = [];
 
 const body = document.querySelector("body");
 const baseline = window.innerHeight;
-const factor = 0.8
+const factor = 0.9
 
 body.addEventListener("click", (event) => {
     console.log(event.pageX, event.pageY);
@@ -28,7 +28,7 @@ setInterval(() => {
     snowList.forEach(snowObj => {
         snow = document.getElementById(snowObj.id);
         snow.remove();
-        snowObj.y += 10
+        snowObj.y += 2
         if (snowObj.y <= baseline * factor) {
             const snow = document.createElement("div");
             snow.className = "snow";
@@ -41,4 +41,4 @@ setInterval(() => {
     });
 
     snowList = snowList.filter((snowObj) => snowObj.y <= baseline * factor);
-}, 1000);
+}, 50);

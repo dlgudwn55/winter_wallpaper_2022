@@ -9,7 +9,7 @@ body {
 
 .snow {
     background-color: white;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
 }
